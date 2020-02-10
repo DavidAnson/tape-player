@@ -7,21 +7,21 @@ const { EOL } = require("os");
 const { inspect } = require("util");
 const { stdout, stderr } = process;
 const inspectOptions = {
-  "compact": true,
-  "breakLength": Infinity
+  "breakLength": Infinity,
+  "compact": true
 };
 
 let tests = 0;
 let assertions = 0;
 let failures = 0;
 
-tape
-  .createStream({ "objectMode": true })
-  .on("data", (data) => {
+tape.
+  createStream({ "objectMode": true }).
+  on("data", (data) => {
     if (data.type === "test") {
       tests++;
       stdout.write(`${data.name}${EOL}`);
-    } else if (data.id !== undefined) {
+    } else if (typeof data.id !== "undefined") {
       assertions++;
       if (!data.ok) {
         failures++;
@@ -35,8 +35,8 @@ tape
         ].join(EOL));
       }
     }
-  })
-  .on("close", () => {
+  }).
+  on("close", () => {
     stdout.write([
       "",
       `Tests:    ${tests}`,
