@@ -12,15 +12,17 @@
   },
   "bugs": "https://github.com/DavidAnson/tape-player/issues",
   "scripts": {
-    "lint": "eslint *.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint index.js test",
+    "test": "node test/test-scenarios.js"
   },
   "peerDependencies": {
     "tape": ">=4"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "execa": "^4.0.0",
+    "tape": "^4.13.0"
   },
   "keywords": [
     "tape",

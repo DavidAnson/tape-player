@@ -13,9 +13,13 @@
     "ecmaVersion": 2018
   },
   "rules": {
+    "array-bracket-spacing": ["error", "always"],
+    "array-element-newline": "off",
     "function-call-argument-newline": "off",
     "indent": [ "error", 2 ],
+    "no-magic-numbers": "off",
     "no-plusplus": "off",
+    "no-sync": "off",
     "object-curly-spacing": [ "error", "always" ],
     "one-var": "off",
     "padded-blocks": "off"
