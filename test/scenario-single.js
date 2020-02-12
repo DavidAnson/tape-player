@@ -7,5 +7,5 @@ require("../index.js");
 
 tape("single test", (test) => {
   test.plan(1);
-  test.ok(true);
+  test.pass();
 });

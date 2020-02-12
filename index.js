@@ -5,7 +5,7 @@
 const tape = require("tape");
 const { EOL } = require("os");
 const { inspect } = require("util");
-const { stdout, stderr } = process;
+const { stdout } = process;
 const inspectOptions = {
   "breakLength": Infinity,
   "compact": true
@@ -25,14 +25,19 @@ tape.
       assertions++;
       if (!data.ok) {
         failures++;
-        stderr.write([
+        const lines = [
           `  ${data.file}`,
           `  Message:  ${data.name}`,
-          `  Operator: ${data.operator}`,
-          `  Expected: ${inspect(data.expected, inspectOptions)}`,
-          `  Actual:   ${inspect(data.actual, inspectOptions)}`,
-          ""
-        ].join(EOL));
+          `  Operator: ${data.operator}`
+        ];
+        if (Object.prototype.hasOwnProperty.call(data, "expected")) {
+          lines.push(`  Expected: ${inspect(data.expected, inspectOptions)}`);
+        }
+        if (Object.prototype.hasOwnProperty.call(data, "actual")) {
+          lines.push(`  Actual:   ${inspect(data.actual, inspectOptions)}`);
+        }
+        lines.push("");
+        stdout.write(lines.join(EOL));
       }
     }
   }).
