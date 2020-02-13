@@ -1,7 +1,6 @@
 first test
-opts.skip test
 last test
 
-Tests:    3
+Tests:    2
 Asserts:  2
 Failures: 0

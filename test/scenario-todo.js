@@ -10,16 +10,9 @@ tape("first test", (test) => {
   test.pass();
 });
 
-tape.skip("test.skip test", (test) => {
-  test.plan(2);
-  test.pass();
-  test.pass();
-});
-
-tape("opts.skip test", { "skip": true }, (test) => {
-  test.plan(2);
-  test.pass();
-  test.pass();
+tape.skip("middle test", { "todo": true }, (test) => {
+  test.plan(1);
+  test.fail();
 });
 
 tape("last test", (test) => {

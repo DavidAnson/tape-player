@@ -1,0 +1,10 @@
+passing test
+failing test
+  /home/pi/tape-player/test/scenario-mixed.js:15:8
+  Message:  oops
+  Operator: fail
+passing test
+
+Tests:    3
+Asserts:  3
+Failures: 1
