@@ -1,0 +1,26 @@
+match test
+  scenario-match-doesnotmatch.js:11:8
+  Message:  The input did not match the regular expression /n.t/u. Input: 'string'
+  Operator: match
+  Expected: /n.t/u
+  Actual:   'string'
+  scenario-match-doesnotmatch.js:12:8
+  Message:  nt message
+  Operator: match
+  Expected: /n.t/u
+  Actual:   'string'
+doesNotMatch test
+  scenario-match-doesnotmatch.js:19:8
+  Message:  The input was expected to not match the regular expression /s.r.n./u. Input: 'string'
+  Operator: doesNotMatch
+  Expected: /s.r.n./u
+  Actual:   'string'
+  scenario-match-doesnotmatch.js:20:8
+  Message:  srn message
+  Operator: doesNotMatch
+  Expected: /s.r.n./u
+  Actual:   'string'
+
+Tests:    2
+Asserts:  8
+Failures: 4
