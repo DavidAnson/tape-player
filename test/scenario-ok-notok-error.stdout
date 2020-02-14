@@ -1,39 +1,39 @@
 ok test
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:11:8
+  scenario-ok-notok-error.js:11:8
   Message:  should be truthy
   Operator: ok
   Expected: true
   Actual:   0
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:12:8
+  scenario-ok-notok-error.js:12:8
   Message:  false message
   Operator: ok
   Expected: true
   Actual:   false
 notOk test
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:19:8
+  scenario-ok-notok-error.js:19:8
   Message:  should be falsy
   Operator: notOk
   Expected: false
   Actual:   1
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:20:8
+  scenario-ok-notok-error.js:20:8
   Message:  2 message
   Operator: notOk
   Expected: false
   Actual:   2
 error test
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:27:8
+  scenario-ok-notok-error.js:27:8
   Message:  1
   Operator: error
   Actual:   1
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:28:8
+  scenario-ok-notok-error.js:28:8
   Message:  2 message
   Operator: error
   Actual:   2
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:31:8
+  scenario-ok-notok-error.js:31:8
   Message:  Error: error instance
   Operator: error
   Actual:   [stack]
-  /home/pi/tape-player/test/scenario-ok-notok-error.js:32:8
+  scenario-ok-notok-error.js:32:8
   Message:  error message
   Operator: error
   Actual:   [stack]

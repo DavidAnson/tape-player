@@ -1,10 +1,10 @@
 end
-  /home/pi/tape-player/test/scenario-end-fail-pass-skip.js:9:8
+  scenario-end-fail-pass-skip.js:9:8
   Message:  end error
   Operator: error
   Actual:   'end error'
 pass fail
-  /home/pi/tape-player/test/scenario-end-fail-pass-skip.js:14:8
+  scenario-end-fail-pass-skip.js:14:8
   Message:  fail message
   Operator: fail
 skip

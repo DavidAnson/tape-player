@@ -10,6 +10,7 @@ require("../index.js");
 
 const utf8Encoding = { "encoding": "utf8" };
 const scenarioTestRe = /^scenario-.+\.js$/iu;
+const pathPrefixRe = /\S*[/\\]/gu;
 const jsExtensionRe = /.js$/iu;
 const crRe = /\r/gu;
 
@@ -25,7 +26,7 @@ const createTestForFile = (file) => (test) => {
     then((results) => {
       const [ child, stdout ] = results;
       test.equal(
-        child.stdout.replace(crRe, ""),
+        child.stdout.replace(crRe, "").replace(pathPrefixRe, ""),
         stdout.toString().replace(crRe, "")
       );
       test.equal(child.stderr, "");
