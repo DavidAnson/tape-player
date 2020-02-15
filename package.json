@@ -12,6 +12,7 @@
   },
   "bugs": "https://github.com/DavidAnson/tape-player/issues",
   "scripts": {
+    "ci": "npm test && npm run lint",
     "lint": "eslint index.js test",
     "test": "node test/test-scenarios.js"
   },
