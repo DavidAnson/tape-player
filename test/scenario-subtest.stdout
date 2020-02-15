@@ -1,0 +1,12 @@
+outer test
+  scenario-subtest.js:15:8
+  Message:  outer
+  Operator: fail
+inner test
+  scenario-subtest.js:12:11
+  Message:  inner
+  Operator: fail
+
+Tests:    2
+Asserts:  4
+Failures: 2
