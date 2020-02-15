@@ -21,7 +21,7 @@ tape("notEqual test", (test) => {
   test.end();
 });
 
-tape("deepEqual test", (test) => {
+tape("deepEqual test object", (test) => {
   const aa = { "property": 1 };
   const bb = { "property": 1 };
   const cc = { "property": 2 };
@@ -32,10 +32,32 @@ tape("deepEqual test", (test) => {
   test.end();
 });
 
-tape("notDeepEqual test", (test) => {
+tape("notDeepEqual test object", (test) => {
   const aa = { "property": 1 };
   const bb = { "property": 1 };
   const cc = { "property": 2 };
+  test.notDeepEqual(aa, bb);
+  test.notDeepEqual(aa, bb, "bb message");
+  test.notDeepEqual(bb, cc);
+  test.notDeepEqual(bb, cc, "cb message");
+  test.end();
+});
+
+tape("deepEqual test array", (test) => {
+  const aa = [ 1, 2 ];
+  const bb = [ 1, 2 ];
+  const cc = [ 1, 2, 3 ];
+  test.deepEqual(aa, bb);
+  test.deepEqual(aa, bb, "bb message");
+  test.deepEqual(bb, cc);
+  test.deepEqual(bb, cc, "cc message");
+  test.end();
+});
+
+tape("notDeepEqual test array", (test) => {
+  const aa = [ 1, 2 ];
+  const bb = [ 1, 2 ];
+  const cc = [ 1, 2, 3 ];
   test.notDeepEqual(aa, bb);
   test.notDeepEqual(aa, bb, "bb message");
   test.notDeepEqual(bb, cc);

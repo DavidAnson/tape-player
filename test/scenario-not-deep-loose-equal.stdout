@@ -20,7 +20,7 @@ notEqual test
   Operator: notEqual
   Expected: 1
   Actual:   1
-deepEqual test
+deepEqual test object
   scenario-not-deep-loose-equal.js:30:8
   Message:  should be equivalent
   Operator: deepEqual
@@ -31,7 +31,7 @@ deepEqual test
   Operator: deepEqual
   Expected: { property: 2 }
   Actual:   { property: 1 }
-notDeepEqual test
+notDeepEqual test object
   scenario-not-deep-loose-equal.js:39:8
   Message:  should not be equivalent
   Operator: notDeepEqual
@@ -42,29 +42,51 @@ notDeepEqual test
   Operator: notDeepEqual
   Expected: { property: 1 }
   Actual:   { property: 1 }
-deepLooseEqual test
+deepEqual test array
   scenario-not-deep-loose-equal.js:52:8
+  Message:  should be equivalent
+  Operator: deepEqual
+  Expected: [ 1, 2, 3 ]
+  Actual:   [ 1, 2 ]
+  scenario-not-deep-loose-equal.js:53:8
+  Message:  cc message
+  Operator: deepEqual
+  Expected: [ 1, 2, 3 ]
+  Actual:   [ 1, 2 ]
+notDeepEqual test array
+  scenario-not-deep-loose-equal.js:61:8
+  Message:  should not be equivalent
+  Operator: notDeepEqual
+  Expected: [ 1, 2 ]
+  Actual:   [ 1, 2 ]
+  scenario-not-deep-loose-equal.js:62:8
+  Message:  bb message
+  Operator: notDeepEqual
+  Expected: [ 1, 2 ]
+  Actual:   [ 1, 2 ]
+deepLooseEqual test
+  scenario-not-deep-loose-equal.js:74:8
   Message:  should be equivalent
   Operator: deepLooseEqual
   Expected: { property: 2 }
   Actual:   { property: '1' }
-  scenario-not-deep-loose-equal.js:53:8
+  scenario-not-deep-loose-equal.js:75:8
   Message:  cc message
   Operator: deepLooseEqual
   Expected: { property: 2 }
   Actual:   { property: '1' }
 notDeepLooseEqual test
-  scenario-not-deep-loose-equal.js:61:8
+  scenario-not-deep-loose-equal.js:83:8
   Message:  should be equivalent
   Operator: notDeepLooseEqual
   Expected: { property: '1' }
   Actual:   { property: 1 }
-  scenario-not-deep-loose-equal.js:62:8
+  scenario-not-deep-loose-equal.js:84:8
   Message:  bb message
   Operator: notDeepLooseEqual
   Expected: { property: '1' }
   Actual:   { property: 1 }
 
-Tests:    6
-Asserts:  24
-Failures: 12
+Tests:    8
+Asserts:  32
+Failures: 16
