@@ -16,6 +16,9 @@
     "lint": "eslint *.js test && markdownlint *.md",
     "test": "node test/test-scenarios.js"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "peerDependencies": {
     "tape": ">=4"
   },
