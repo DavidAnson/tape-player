@@ -24,3 +24,7 @@ jobs:
       run: npm install --no-package-lock
     - name: Run Tests
       run: npm run ci
+    - name: Install tape@4
+      run: npm install --no-package-lock tape@4
+    - name: Run Tests with tape@4
+      run: npm run ci
