@@ -1,0 +1,92 @@
+equal test
+  scenario-not-deep-loose-equal.js:11:8
+  Message:  should be strictly equal
+  Operator: equal
+  Expected: 2
+  Actual:   1
+  scenario-not-deep-loose-equal.js:12:8
+  Message:  2 message
+  Operator: equal
+  Expected: 2
+  Actual:   1
+notEqual test
+  scenario-not-deep-loose-equal.js:19:8
+  Message:  should not be strictly equal
+  Operator: notEqual
+  Expected: 1
+  Actual:   1
+  scenario-not-deep-loose-equal.js:20:8
+  Message:  1 message
+  Operator: notEqual
+  Expected: 1
+  Actual:   1
+deepEqual test object
+  scenario-not-deep-loose-equal.js:30:8
+  Message:  should be deeply equivalent
+  Operator: deepEqual
+  Expected: { property: 2 }
+  Actual:   { property: 1 }
+  scenario-not-deep-loose-equal.js:31:8
+  Message:  cc message
+  Operator: deepEqual
+  Expected: { property: 2 }
+  Actual:   { property: 1 }
+notDeepEqual test object
+  scenario-not-deep-loose-equal.js:39:8
+  Message:  should not be deeply equivalent
+  Operator: notDeepEqual
+  Expected: { property: 1 }
+  Actual:   { property: 1 }
+  scenario-not-deep-loose-equal.js:40:8
+  Message:  bb message
+  Operator: notDeepEqual
+  Expected: { property: 1 }
+  Actual:   { property: 1 }
+deepEqual test array
+  scenario-not-deep-loose-equal.js:52:8
+  Message:  should be deeply equivalent
+  Operator: deepEqual
+  Expected: [ 1, 2, 3 ]
+  Actual:   [ 1, 2 ]
+  scenario-not-deep-loose-equal.js:53:8
+  Message:  cc message
+  Operator: deepEqual
+  Expected: [ 1, 2, 3 ]
+  Actual:   [ 1, 2 ]
+notDeepEqual test array
+  scenario-not-deep-loose-equal.js:61:8
+  Message:  should not be deeply equivalent
+  Operator: notDeepEqual
+  Expected: [ 1, 2 ]
+  Actual:   [ 1, 2 ]
+  scenario-not-deep-loose-equal.js:62:8
+  Message:  bb message
+  Operator: notDeepEqual
+  Expected: [ 1, 2 ]
+  Actual:   [ 1, 2 ]
+deepLooseEqual test
+  scenario-not-deep-loose-equal.js:74:8
+  Message:  should be loosely deeply equivalent
+  Operator: deepLooseEqual
+  Expected: { property: 2 }
+  Actual:   { property: '1' }
+  scenario-not-deep-loose-equal.js:75:8
+  Message:  cc message
+  Operator: deepLooseEqual
+  Expected: { property: 2 }
+  Actual:   { property: '1' }
+notDeepLooseEqual test
+  scenario-not-deep-loose-equal.js:83:8
+  Message:  should not be loosely deeply equivalent
+  Operator: notDeepLooseEqual
+  Expected: { property: '1' }
+  Actual:   { property: 1 }
+  scenario-not-deep-loose-equal.js:84:8
+  Message:  bb message
+  Operator: notDeepLooseEqual
+  Expected: { property: '1' }
+  Actual:   { property: 1 }
+
+Tests:    8
+Asserts:  32
+Failures: 16

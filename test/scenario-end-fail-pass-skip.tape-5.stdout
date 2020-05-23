@@ -1,0 +1,13 @@
+end
+  scenario-end-fail-pass-skip.js:9:8
+  Message:  end error
+  Operator: error
+pass fail
+  scenario-end-fail-pass-skip.js:14:8
+  Message:  fail message
+  Operator: fail
+skip
+
+Tests:    3
+Asserts:  6
+Failures: 2

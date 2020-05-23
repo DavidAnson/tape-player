@@ -24,6 +24,7 @@
     "no-sync": "off",
     "object-curly-spacing": [ "error", "always" ],
     "one-var": "off",
-    "padded-blocks": "off"
+    "padded-blocks": "off",
+    "prefer-named-capture-group": "off"
   }
 }

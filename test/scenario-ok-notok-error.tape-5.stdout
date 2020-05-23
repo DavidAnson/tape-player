@@ -1,0 +1,39 @@
+ok test
+  scenario-ok-notok-error.js:11:8
+  Message:  should be truthy
+  Operator: ok
+  Expected: true
+  Actual:   0
+  scenario-ok-notok-error.js:12:8
+  Message:  false message
+  Operator: ok
+  Expected: true
+  Actual:   false
+notOk test
+  scenario-ok-notok-error.js:19:8
+  Message:  should be falsy
+  Operator: notOk
+  Expected: false
+  Actual:   1
+  scenario-ok-notok-error.js:20:8
+  Message:  2 message
+  Operator: notOk
+  Expected: false
+  Actual:   2
+error test
+  scenario-ok-notok-error.js:27:8
+  Message:  1
+  Operator: error
+  scenario-ok-notok-error.js:28:8
+  Message:  2 message
+  Operator: error
+  scenario-ok-notok-error.js:31:8
+  Message:  Error: error instance
+  Operator: error
+  scenario-ok-notok-error.js:32:8
+  Message:  error message
+  Operator: error
+
+Tests:    3
+Asserts:  14
+Failures: 8
