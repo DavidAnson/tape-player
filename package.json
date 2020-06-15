@@ -1,6 +1,6 @@
 {
   "name": "tape-player",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple, terse, in-process reporter for the tape test harness for Node.js.",
   "main": "index.js",
   "author": "David Anson (https://dlaa.me/)",
